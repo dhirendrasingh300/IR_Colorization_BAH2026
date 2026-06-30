@@ -1,0 +1,1259 @@
+2026-06-25 12:47:44,007 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-25 12:47:44,009 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-25 12:47:57,627 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-25 12:47:58,204 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-25 12:47:58,798 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-25 12:47:59,355 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-25 12:48:01,028 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-25 12:47:59,618 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-25 12:47:59,637 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-25 12:48:00,995 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-25 12:48:01,029 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-25 12:48:01,029 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-26 23:08:44,407 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-26 23:08:44,411 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-26 23:08:57,402 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-26 23:08:58,006 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-26 23:08:58,587 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-26 23:08:59,138 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-26 23:09:00,831 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-26 23:08:59,430 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-26 23:08:59,447 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-26 23:09:00,798 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-26 23:09:00,831 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-26 23:09:00,831 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-26 23:13:43,823 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-26 23:13:43,825 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-26 23:13:55,702 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-26 23:13:56,299 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-26 23:13:56,903 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-26 23:13:57,482 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-26 23:13:59,225 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-26 23:13:57,768 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-26 23:13:57,790 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-26 23:13:59,193 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-26 23:13:59,226 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-26 23:13:59,226 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-26 23:16:14,256 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-26 23:16:14,257 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-26 23:16:25,877 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-26 23:16:26,473 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-26 23:16:27,074 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-26 23:16:27,723 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-26 23:16:29,470 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-26 23:16:28,007 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-26 23:16:28,028 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-26 23:16:29,431 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-26 23:16:29,470 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-26 23:16:29,470 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-26 23:17:27,048 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-26 23:17:27,050 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-26 23:17:38,285 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-26 23:17:38,885 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-26 23:17:39,445 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-26 23:17:40,013 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-26 23:17:41,638 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-26 23:17:40,279 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-26 23:17:40,297 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-26 23:17:41,605 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-26 23:17:41,639 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-26 23:17:41,639 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-26 23:47:22,591 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-26 23:47:22,593 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-26 23:47:34,730 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-26 23:47:35,561 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-26 23:47:36,144 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-26 23:47:36,699 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-26 23:47:38,365 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-26 23:47:36,969 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-26 23:47:36,988 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Processing lucknow
+2026-06-26 23:47:38,332 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - lucknow: created 16 samples
+
+2026-06-26 23:47:38,365 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-26 23:47:38,365 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-26 23:52:17,631 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-26 23:52:17,634 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-26 23:52:28,956 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-26 23:52:29,538 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-26 23:52:30,121 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-26 23:52:30,676 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-26 23:52:36,521 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-26 23:52:30,941 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products
+2026-06-26 23:52:30,975 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - lucknow: aligned grids ready
+2026-06-26 23:52:36,488 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - lucknow: created 56 samples
+
+2026-06-26 23:52:36,522 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-26 23:52:36,522 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:02:40,621 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:02:40,623 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:02:52,113 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:02:52,698 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:02:53,278 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:02:53,845 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:02:55,282 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:02:54,109 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:02:54,130 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:02:55,248 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:02:55,282 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:02:55,282 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:06:59,455 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:06:59,456 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:07:11,135 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:07:11,735 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:07:12,335 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:07:12,882 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:07:14,183 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:07:13,147 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:07:13,165 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:07:14,147 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:07:14,183 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:07:14,183 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:08:57,593 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:08:57,595 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:09:09,322 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:09:09,918 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:09:10,498 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:09:11,057 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:09:12,375 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:09:11,324 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:09:11,345 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:09:12,335 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:09:12,376 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:09:12,376 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:12:38,509 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:12:38,510 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:12:50,746 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:12:51,554 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:12:52,138 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:12:52,695 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:12:54,466 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:12:52,964 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:12:52,981 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:12:54,432 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:12:54,466 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:12:54,466 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:13:53,613 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:13:53,614 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:14:04,499 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:14:05,055 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:14:05,612 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:14:06,168 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:14:07,271 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:14:06,433 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:14:06,450 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:14:07,238 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:14:07,271 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:14:07,271 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:21:55,777 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:21:55,780 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:22:07,536 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:22:08,106 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:22:08,671 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:22:09,279 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:22:10,999 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:22:09,606 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:22:09,624 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:22:10,965 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:22:11,000 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:22:11,000 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:31:00,596 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:31:00,598 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:31:12,698 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from merge_rgb.py:
+15287.0 65535
+14170.0 59284
+13648.0 44126
+
+2026-06-27 00:31:12,698 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:31:13,302 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:31:13,915 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:31:14,465 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:31:16,067 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from create_patches.py:
+30678.0 31749
+30758.0 31976
+13527.0 17482
+12824.0 15820
+12724.0 15166
+30949.299999999996 31946
+31040.0 32234
+13614.0 16970
+12859.139999999985 15629
+12768.0 15327
+28661.299999999996 30051
+28751.0 30572
+13805.139999999985 17292
+13429.0 16425
+13318.0 15905
+29219.0 30180
+29255.0 30299
+14195.0 16808
+13315.0 15858
+12975.0 15390
+32301.0 34372
+32338.0 34455
+15205.0 20609
+13930.0 18858
+13363.0 17662
+3583.2999999999956 6451
+3687.0 6754
+4996.0 13281
+3213.0 10476
+2463.0 8570
+2148.0 4336
+2233.0 4577
+3744.1399999999994 11559
+2385.0 8819
+1765.0 7293
+3021.599999999995 5047
+3165.0 5208
+5601.139999999999 9322
+4088.0 6900
+3225.0 5618
+33392.0 35338
+33446.0 35539
+15831.0 18983
+14565.0 17292
+13871.0 16408
+4267.0 7431
+4415.0 7792
+5144.0 12020
+3404.0 9847
+2553.0 7842
+3504.0 5786
+3605.0 6257
+4649.0 12904
+2939.0 10110
+2155.0 8604
+3287.0 30300
+3362.0 30370
+5715.0 20369
+3898.0 18791
+3182.0 17757
+33309.299999999996 35183
+33359.0 35293
+15445.0 19277
+14362.0 17485
+13908.0 16168
+5925.299999999999 35018
+6026.139999999985 35304
+6240.0 19623
+4188.0 18289
+3054.0 17343
+4578.0 6511
+4622.0 6932
+6101.0 20188
+3977.0 16300
+2956.0 13391
+29941.0 31038
+29962.0 31224
+14227.139999999985 19586
+13444.0 18114
+13119.0 17228
+
+2026-06-27 00:31:16,067 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:31:14,732 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:31:14,750 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:31:16,027 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:31:16,068 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:31:16,068 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:35:14,214 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:35:14,215 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:35:25,502 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from merge_rgb.py:
+15287.0 65535
+14170.0 59284
+13648.0 44126
+
+2026-06-27 00:35:25,502 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:35:26,084 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:35:26,654 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:35:27,199 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:35:28,798 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from create_patches.py:
+30678.0 31749
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_200m.png
+30758.0 31976
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_100m_512.png
+13527.0 17482
+12824.0 15820
+12724.0 15166
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\rgb_100m_512.png
+30949.299999999996 31946
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_200m.png
+31040.0 32234
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_100m_512.png
+13614.0 16970
+12859.139999999985 15629
+12768.0 15327
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\rgb_100m_512.png
+28661.299999999996 30051
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_200m.png
+28751.0 30572
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_100m_512.png
+13805.139999999985 17292
+13429.0 16425
+13318.0 15905
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\rgb_100m_512.png
+29219.0 30180
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_200m.png
+29255.0 30299
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_100m_512.png
+14195.0 16808
+13315.0 15858
+12975.0 15390
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\rgb_100m_512.png
+32301.0 34372
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_200m.png
+32338.0 34455
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_100m_512.png
+15205.0 20609
+13930.0 18858
+13363.0 17662
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\rgb_100m_512.png
+3583.2999999999956 6451
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_200m.png
+3687.0 6754
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_100m_512.png
+4996.0 13281
+3213.0 10476
+2463.0 8570
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\rgb_100m_512.png
+2148.0 4336
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_200m.png
+2233.0 4577
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_100m_512.png
+3744.1399999999994 11559
+2385.0 8819
+1765.0 7293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\rgb_100m_512.png
+3021.599999999995 5047
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_200m.png
+3165.0 5208
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_100m_512.png
+5601.139999999999 9322
+4088.0 6900
+3225.0 5618
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\rgb_100m_512.png
+33392.0 35338
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_200m.png
+33446.0 35539
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_100m_512.png
+15831.0 18983
+14565.0 17292
+13871.0 16408
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\rgb_100m_512.png
+4267.0 7431
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_200m.png
+4415.0 7792
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_100m_512.png
+5144.0 12020
+3404.0 9847
+2553.0 7842
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\rgb_100m_512.png
+3504.0 5786
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_200m.png
+3605.0 6257
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_100m_512.png
+4649.0 12904
+2939.0 10110
+2155.0 8604
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\rgb_100m_512.png
+3287.0 30300
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_200m.png
+3362.0 30370
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_100m_512.png
+5715.0 20369
+3898.0 18791
+3182.0 17757
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\rgb_100m_512.png
+33309.299999999996 35183
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_200m.png
+33359.0 35293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_100m_512.png
+15445.0 19277
+14362.0 17485
+13908.0 16168
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\rgb_100m_512.png
+5925.299999999999 35018
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_200m.png
+6026.139999999985 35304
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_100m_512.png
+6240.0 19623
+4188.0 18289
+3054.0 17343
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\rgb_100m_512.png
+4578.0 6511
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_200m.png
+4622.0 6932
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_100m_512.png
+6101.0 20188
+3977.0 16300
+2956.0 13391
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\rgb_100m_512.png
+29941.0 31038
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_200m.png
+29962.0 31224
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_100m_512.png
+14227.139999999985 19586
+13444.0 18114
+13119.0 17228
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\rgb_100m_512.png
+
+2026-06-27 00:35:28,799 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:35:27,461 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:35:27,478 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:35:28,763 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:35:28,799 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:35:28,800 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:40:03,844 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:40:03,846 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:40:14,916 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from merge_rgb.py:
+0.0
+15287.0 65535
+0.0
+14170.0 59284
+0.0
+13648.0 44126
+
+2026-06-27 00:40:14,916 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:40:15,514 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:40:16,069 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:40:16,620 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:40:18,288 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from create_patches.py:
+0.0
+30678.0 31749
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_200m.png
+0.0
+30758.0 31976
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_100m_512.png
+0.0
+13527.0 17482
+0.0
+12824.0 15820
+0.0
+12724.0 15166
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\rgb_100m_512.png
+0.0
+30949.299999999996 31946
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_200m.png
+0.0
+31040.0 32234
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_100m_512.png
+0.0
+13614.0 16970
+0.0
+12859.139999999985 15629
+0.0
+12768.0 15327
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\rgb_100m_512.png
+0.0
+28661.299999999996 30051
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_200m.png
+0.0
+28751.0 30572
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_100m_512.png
+0.0
+13805.139999999985 17292
+0.0
+13429.0 16425
+0.0
+13318.0 15905
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\rgb_100m_512.png
+0.0
+29219.0 30180
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_200m.png
+0.0
+29255.0 30299
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_100m_512.png
+0.0
+14195.0 16808
+0.0
+13315.0 15858
+0.0
+12975.0 15390
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\rgb_100m_512.png
+0.0
+32301.0 34372
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_200m.png
+0.0
+32338.0 34455
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_100m_512.png
+0.0
+15205.0 20609
+0.0
+13930.0 18858
+0.0
+13363.0 17662
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\rgb_100m_512.png
+26797.0
+3583.2999999999956 6451
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_200m.png
+26760.0
+3687.0 6754
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_100m_512.png
+9434.0
+4996.0 13281
+10336.0
+3213.0 10476
+10822.0
+2463.0 8570
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\rgb_100m_512.png
+26559.0
+2148.0 4336
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_200m.png
+26546.0
+2233.0 4577
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_100m_512.png
+9740.86
+3744.1399999999994 11559
+10511.0
+2385.0 8819
+10951.0
+1765.0 7293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\rgb_100m_512.png
+26048.7
+3021.599999999995 5047
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_200m.png
+25957.0
+3165.0 5208
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_100m_512.png
+9449.86
+5601.139999999999 9322
+10345.0
+4088.0 6900
+10813.0
+3225.0 5618
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\rgb_100m_512.png
+0.0
+33392.0 35338
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_200m.png
+0.0
+33446.0 35539
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_100m_512.png
+0.0
+15831.0 18983
+0.0
+14565.0 17292
+0.0
+13871.0 16408
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\rgb_100m_512.png
+28184.0
+4267.0 7431
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_200m.png
+28113.0
+4415.0 7792
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_100m_512.png
+10062.0
+5144.0 12020
+10725.0
+3404.0 9847
+11106.0
+2553.0 7842
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\rgb_100m_512.png
+26630.0
+3504.0 5786
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_200m.png
+26581.0
+3605.0 6257
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_100m_512.png
+9572.0
+4649.0 12904
+10419.0
+2939.0 10110
+10885.0
+2155.0 8604
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\rgb_100m_512.png
+25945.0
+3287.0 30300
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_200m.png
+25918.0
+3362.0 30370
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_100m_512.png
+9242.0
+5715.0 20369
+10445.0
+3898.0 18791
+10767.0
+3182.0 17757
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\rgb_100m_512.png
+0.0
+33309.299999999996 35183
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_200m.png
+0.0
+33359.0 35293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_100m_512.png
+0.0
+15445.0 19277
+0.0
+14362.0 17485
+0.0
+13908.0 16168
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\rgb_100m_512.png
+27038.7
+5925.299999999999 35018
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_200m.png
+27001.0
+6026.139999999985 35304
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_100m_512.png
+9265.0
+6240.0 19623
+10186.0
+4188.0 18289
+10766.0
+3054.0 17343
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\rgb_100m_512.png
+26639.0
+4578.0 6511
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_200m.png
+26607.0
+4622.0 6932
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_100m_512.png
+9024.0
+6101.0 20188
+10082.0
+3977.0 16300
+10619.0
+2956.0 13391
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\rgb_100m_512.png
+0.0
+29941.0 31038
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_200m.png
+0.0
+29962.0 31224
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_100m_512.png
+0.0
+14227.139999999985 19586
+0.0
+13444.0 18114
+0.0
+13119.0 17228
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\rgb_100m_512.png
+
+2026-06-27 00:40:18,289 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:40:16,884 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:40:16,901 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:40:18,254 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:40:18,289 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:40:18,289 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:42:33,277 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:42:33,279 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:43:01,037 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from merge_rgb.py:
+8884.0
+6403.0 65535
+9974.0
+4196.0 59284
+10515.0
+3133.0 44126
+
+2026-06-27 00:43:01,038 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:43:01,608 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:43:02,182 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:43:02,738 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:43:05,333 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from create_patches.py:
+27221.0
+3457.0 31749
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_200m.png
+27099.0
+3659.0 31976
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_100m_512.png
+9266.359999999986
+4260.640000000014 17482
+10308.0
+2516.0 15820
+10622.679999999993
+2101.320000000007 15166
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\rgb_100m_512.png
+25853.0
+5096.299999999996 31946
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_200m.png
+25852.0
+5188.0 32234
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_100m_512.png
+8438.0
+5176.0 16970
+9719.0
+3140.139999999985 15629
+10208.0
+2560.0 15327
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\rgb_100m_512.png
+25876.0
+2785.2999999999956 30051
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_200m.png
+25844.0
+2907.0 30572
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_100m_512.png
+8636.0
+5169.139999999985 17292
+9845.0
+3584.0 16425
+10360.0
+2958.0 15905
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\rgb_100m_512.png
+25358.0
+3861.0 30180
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_200m.png
+25465.79999999999
+3789.2000000000116 30299
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_100m_512.png
+8558.0
+5637.0 16808
+9672.0
+3643.0 15858
+10243.0
+2732.0 15390
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\rgb_100m_512.png
+22824.800000000105
+9476.199999999895 34372
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_200m.png
+6486.120000000228
+25851.879999999772 34455
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_100m_512.png
+8914.0
+6291.0 20609
+10001.0
+3929.0 18858
+10575.360000000015
+2787.639999999985 17662
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\rgb_100m_512.png
+26797.0
+3583.2999999999956 6451
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_200m.png
+26760.0
+3687.0 6754
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_100m_512.png
+9434.0
+4996.0 13281
+10336.0
+3213.0 10476
+10822.0
+2463.0 8570
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\rgb_100m_512.png
+26559.0
+2148.0 4336
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_200m.png
+26546.0
+2233.0 4577
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_100m_512.png
+9740.86
+3744.1399999999994 11559
+10511.0
+2385.0 8819
+10951.0
+1765.0 7293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\rgb_100m_512.png
+26048.7
+3021.599999999995 5047
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_200m.png
+25957.0
+3165.0 5208
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_100m_512.png
+9449.86
+5601.139999999999 9322
+10345.0
+4088.0 6900
+10813.0
+3225.0 5618
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\rgb_100m_512.png
+26964.0
+6428.0 35338
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_200m.png
+26896.0
+6550.0 35539
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_100m_512.png
+9100.0
+6731.0 18983
+10088.0
+4477.0 17292
+10690.0
+3181.0 16408
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\rgb_100m_512.png
+28184.0
+4267.0 7431
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_200m.png
+28113.0
+4415.0 7792
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_100m_512.png
+10062.0
+5144.0 12020
+10725.0
+3404.0 9847
+11106.0
+2553.0 7842
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\rgb_100m_512.png
+26630.0
+3504.0 5786
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_200m.png
+26581.0
+3605.0 6257
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_100m_512.png
+9572.0
+4649.0 12904
+10419.0
+2939.0 10110
+10885.0
+2155.0 8604
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\rgb_100m_512.png
+25945.0
+3287.0 30300
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_200m.png
+25918.0
+3362.0 30370
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_100m_512.png
+9242.0
+5715.0 20369
+10445.0
+3898.0 18791
+10767.0
+3182.0 17757
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\rgb_100m_512.png
+26458.100000000002
+6851.199999999993 35183
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_200m.png
+26587.0
+6772.0 35293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_100m_512.png
+8784.46
+6660.540000000001 19277
+9713.919999999998
+4648.080000000002 17485
+9589.679999999993
+4318.320000000007 16168
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\rgb_100m_512.png
+27038.7
+5925.299999999999 35018
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_200m.png
+27001.0
+6026.139999999985 35304
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_100m_512.png
+9265.0
+6240.0 19623
+10186.0
+4188.0 18289
+10766.0
+3054.0 17343
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\rgb_100m_512.png
+26639.0
+4578.0 6511
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_200m.png
+26607.0
+4622.0 6932
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_100m_512.png
+9024.0
+6101.0 20188
+10082.0
+3977.0 16300
+10619.0
+2956.0 13391
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\rgb_100m_512.png
+26285.0
+3656.0 31038
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_200m.png
+26059.0
+3903.0 31224
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_100m_512.png
+9301.0
+4926.139999999985 19586
+10454.0
+2990.0 18114
+10810.0
+2309.0 17228
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\rgb_100m_512.png
+
+2026-06-27 00:43:05,334 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:43:03,005 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:43:03,022 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:43:05,298 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:43:05,334 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:43:05,334 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-27 00:43:41,426 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-27 00:43:41,427 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-27 00:44:08,826 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from merge_rgb.py:
+8884.0
+6403.0 65535
+9974.0
+4196.0 59284
+10515.0
+3133.0 44126
+
+2026-06-27 00:44:08,827 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-27 00:44:09,416 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-27 00:44:09,980 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-27 00:44:10,538 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-27 00:44:13,150 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - STDOUT from create_patches.py:
+27221.0
+3457.0 31749
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_200m.png
+27099.0
+3659.0 31976
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\tir_100m_512.png
+9266.359999999986
+4260.640000000014 17482
+10308.0
+2516.0 15820
+10622.679999999993
+2101.320000000007 15166
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_000\rgb_100m_512.png
+25853.0
+5096.299999999996 31946
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_200m.png
+25852.0
+5188.0 32234
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\tir_100m_512.png
+8438.0
+5176.0 16970
+9719.0
+3140.139999999985 15629
+10208.0
+2560.0 15327
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_001\rgb_100m_512.png
+25876.0
+2785.2999999999956 30051
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_200m.png
+25844.0
+2907.0 30572
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\tir_100m_512.png
+8636.0
+5169.139999999985 17292
+9845.0
+3584.0 16425
+10360.0
+2958.0 15905
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_002\rgb_100m_512.png
+25358.0
+3861.0 30180
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_200m.png
+25465.79999999999
+3789.2000000000116 30299
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\tir_100m_512.png
+8558.0
+5637.0 16808
+9672.0
+3643.0 15858
+10243.0
+2732.0 15390
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_003\rgb_100m_512.png
+22824.800000000105
+9476.199999999895 34372
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_200m.png
+6486.120000000228
+25851.879999999772 34455
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\tir_100m_512.png
+8914.0
+6291.0 20609
+10001.0
+3929.0 18858
+10575.360000000015
+2787.639999999985 17662
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_004\rgb_100m_512.png
+26797.0
+3583.2999999999956 6451
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_200m.png
+26760.0
+3687.0 6754
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\tir_100m_512.png
+9434.0
+4996.0 13281
+10336.0
+3213.0 10476
+10822.0
+2463.0 8570
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_005\rgb_100m_512.png
+26559.0
+2148.0 4336
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_200m.png
+26546.0
+2233.0 4577
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\tir_100m_512.png
+9740.86
+3744.1399999999994 11559
+10511.0
+2385.0 8819
+10951.0
+1765.0 7293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_006\rgb_100m_512.png
+26048.7
+3021.599999999995 5047
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_200m.png
+25957.0
+3165.0 5208
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\tir_100m_512.png
+9449.86
+5601.139999999999 9322
+10345.0
+4088.0 6900
+10813.0
+3225.0 5618
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_007\rgb_100m_512.png
+26964.0
+6428.0 35338
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_200m.png
+26896.0
+6550.0 35539
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\tir_100m_512.png
+9100.0
+6731.0 18983
+10088.0
+4477.0 17292
+10690.0
+3181.0 16408
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_008\rgb_100m_512.png
+28184.0
+4267.0 7431
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_200m.png
+28113.0
+4415.0 7792
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\tir_100m_512.png
+10062.0
+5144.0 12020
+10725.0
+3404.0 9847
+11106.0
+2553.0 7842
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_009\rgb_100m_512.png
+26630.0
+3504.0 5786
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_200m.png
+26581.0
+3605.0 6257
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\tir_100m_512.png
+9572.0
+4649.0 12904
+10419.0
+2939.0 10110
+10885.0
+2155.0 8604
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_010\rgb_100m_512.png
+25945.0
+3287.0 30300
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_200m.png
+25918.0
+3362.0 30370
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\tir_100m_512.png
+9242.0
+5715.0 20369
+10445.0
+3898.0 18791
+10767.0
+3182.0 17757
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_011\rgb_100m_512.png
+26458.100000000002
+6851.199999999993 35183
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_200m.png
+26587.0
+6772.0 35293
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\tir_100m_512.png
+8784.46
+6660.540000000001 19277
+9713.919999999998
+4648.080000000002 17485
+9589.679999999993
+4318.320000000007 16168
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_012\rgb_100m_512.png
+27038.7
+5925.299999999999 35018
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_200m.png
+27001.0
+6026.139999999985 35304
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\tir_100m_512.png
+9265.0
+6240.0 19623
+10186.0
+4188.0 18289
+10766.0
+3054.0 17343
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_013\rgb_100m_512.png
+26639.0
+4578.0 6511
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_200m.png
+26607.0
+4622.0 6932
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\tir_100m_512.png
+9024.0
+6101.0 20188
+10082.0
+3977.0 16300
+10619.0
+2956.0 13391
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_014\rgb_100m_512.png
+26285.0
+3656.0 31038
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_200m.png
+26059.0
+3903.0 31224
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\tir_100m_512.png
+9301.0
+4926.139999999985 19586
+10454.0
+2990.0 18114
+10810.0
+2309.0 17228
+d:\hack2Skill\IR-colorization-BAH2026-main\output\patches\lucknow\sample_015\rgb_100m_512.png
+
+2026-06-27 00:44:13,151 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-27 00:44:10,804 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-27 00:44:10,824 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-27 00:44:13,114 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-27 00:44:13,151 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-27 00:44:13,151 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-28 10:04:34,877 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-28 10:04:34,880 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-28 10:04:51,506 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-28 10:04:52,348 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-28 10:04:53,154 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-28 10:04:53,942 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 10:04:56,202 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 10:04:54,312 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 10:04:54,336 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-28 10:04:56,162 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-28 10:04:56,202 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-28 10:04:56,202 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-28 10:54:39,742 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: delhi
+2026-06-28 10:54:39,745 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\delhi_rgb_30m.tif
+2026-06-28 10:54:46,661 - d:\hack2Skill\IR-colorization-BAH2026-main\output - ERROR - Error running merge_rgb.py: Command '['python', 'd:\\hack2Skill\\IR-colorization-BAH2026-main\\scripts\\merge_rgb.py', 'd:\\hack2Skill\\IR-colorization-BAH2026-main\\input\\delhi\\LC09_L1TP_146040_20260525_20260525_02_T1_B4.TIF', 'd:\\hack2Skill\\IR-colorization-BAH2026-main\\input\\delhi\\LC09_L1TP_146040_20260525_20260525_02_T1_B3.TIF', 'd:\\hack2Skill\\IR-colorization-BAH2026-main\\input\\delhi\\LC09_L1TP_146040_20260525_20260525_02_T1_B2.TIF', 'd:\\hack2Skill\\IR-colorization-BAH2026-main\\output\\rgb_images\\delhi_rgb_30m.tif']' returned non-zero exit status 3221225786.
+2026-06-28 10:54:57,535 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: delhi
+2026-06-28 10:54:57,536 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\delhi_rgb_30m.tif
+2026-06-28 10:55:08,713 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\delhi_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_rgb_100m.tif 3.33
+2026-06-28 10:55:09,300 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_tir_100m.tif 3.33
+2026-06-28 10:55:09,893 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_tir_200m.tif 6.67
+2026-06-28 10:55:10,446 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 10:55:13,509 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 10:55:10,722 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 2 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 10:55:10,753 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-28 10:55:12,120 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+2026-06-28 10:55:12,136 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 10:55:13,476 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+
+2026-06-28 10:55:13,509 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for delhi
+2026-06-28 10:55:13,510 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: jammu
+2026-06-28 10:55:13,510 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\jammu_rgb_30m.tif
+2026-06-28 10:55:24,765 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\jammu_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_rgb_100m.tif 3.33
+2026-06-28 10:55:25,393 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_tir_100m.tif 3.33
+2026-06-28 10:55:25,979 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_tir_200m.tif 6.67
+2026-06-28 10:55:26,554 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 10:55:31,018 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 10:55:26,833 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 3 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 10:55:26,850 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for jammu...
+2026-06-28 10:55:28,181 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for jammu.
+2026-06-28 10:55:28,204 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 10:55:29,589 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+2026-06-28 10:55:29,621 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-28 10:55:30,977 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-28 10:55:31,018 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for jammu
+2026-06-28 10:55:31,019 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-28 10:55:31,020 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-28 10:55:42,712 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-28 10:55:43,307 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-28 10:55:43,949 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-28 10:55:44,526 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 10:55:49,018 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 10:55:44,796 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 3 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 10:55:44,814 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-28 10:55:46,212 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+2026-06-28 10:55:46,232 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for jammu...
+2026-06-28 10:55:47,561 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for jammu.
+2026-06-28 10:55:47,584 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 10:55:48,985 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+
+2026-06-28 10:55:49,019 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-28 10:55:49,019 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-28 10:57:15,463 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: delhi
+2026-06-28 10:57:15,464 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\delhi_rgb_30m.tif
+2026-06-28 10:57:26,177 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\delhi_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_rgb_100m.tif 3.33
+2026-06-28 10:57:26,747 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_tir_100m.tif 3.33
+2026-06-28 10:57:27,335 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_tir_200m.tif 6.67
+2026-06-28 10:57:27,897 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 10:57:29,583 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 10:57:28,168 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 10:57:28,185 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 10:57:29,545 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+
+2026-06-28 10:57:29,583 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for delhi
+2026-06-28 10:57:29,583 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: jammu
+2026-06-28 10:57:29,584 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\jammu_rgb_30m.tif
+2026-06-28 10:57:40,497 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\jammu_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_rgb_100m.tif 3.33
+2026-06-28 10:57:41,065 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_tir_100m.tif 3.33
+2026-06-28 10:57:41,670 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC08_L1TP_148037_20260531_20260605_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_tir_200m.tif 6.67
+2026-06-28 10:57:42,240 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 10:57:45,270 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 10:57:42,526 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 2 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 10:57:42,544 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for jammu...
+2026-06-28 10:57:43,890 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for jammu.
+2026-06-28 10:57:43,907 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 10:57:45,238 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+
+2026-06-28 10:57:45,270 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for jammu
+2026-06-28 10:57:45,271 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-28 10:57:45,271 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-28 10:57:56,851 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-28 10:57:57,444 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-28 10:57:58,029 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-28 10:57:58,600 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 10:58:02,994 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 10:57:58,882 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 3 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 10:57:58,899 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for jammu...
+2026-06-28 10:58:00,217 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for jammu.
+2026-06-28 10:58:00,234 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 10:58:01,570 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+2026-06-28 10:58:01,587 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-28 10:58:02,959 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-28 10:58:02,994 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-28 10:58:02,994 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
+2026-06-28 11:04:03,912 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: delhi
+2026-06-28 11:04:03,914 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\delhi_rgb_30m.tif
+2026-06-28 11:04:15,373 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\delhi_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_rgb_100m.tif 3.33
+2026-06-28 11:04:15,954 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_tir_100m.tif 3.33
+2026-06-28 11:04:16,572 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\delhi\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\delhi_tir_200m.tif 6.67
+2026-06-28 11:04:17,128 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 11:04:18,919 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 11:04:17,423 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 1 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 11:04:17,440 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 11:04:18,871 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+
+2026-06-28 11:04:18,919 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for delhi
+2026-06-28 11:04:18,919 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: jammu
+2026-06-28 11:04:18,920 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC09_L1TP_146040_20260525_20260525_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC09_L1TP_146040_20260525_20260525_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC09_L1TP_146040_20260525_20260525_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\jammu_rgb_30m.tif
+2026-06-28 11:04:29,865 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\jammu_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_rgb_100m.tif 3.33
+2026-06-28 11:04:30,426 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_tir_100m.tif 3.33
+2026-06-28 11:04:31,040 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\jammu\LC09_L1TP_146040_20260525_20260525_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\jammu_tir_200m.tif 6.67
+2026-06-28 11:04:31,623 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 11:04:34,696 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 11:04:31,929 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 2 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 11:04:31,950 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for jammu...
+2026-06-28 11:04:33,310 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for jammu.
+2026-06-28 11:04:33,327 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 11:04:34,662 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+
+2026-06-28 11:04:34,696 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for jammu
+2026-06-28 11:04:34,696 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Processing product: lucknow
+2026-06-28 11:04:34,697 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\merge_rgb.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B4.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B3.TIF d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B2.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif
+2026-06-28 11:04:46,388 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\output\rgb_images\lucknow_rgb_30m.tif d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_rgb_100m.tif 3.33
+2026-06-28 11:04:47,010 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_100m.tif 3.33
+2026-06-28 11:04:47,646 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\downscale.py d:\hack2Skill\IR-colorization-BAH2026-main\input\lucknow\LC09_L1TP_144041_20260527_20260527_02_T1_B10.TIF d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data\lucknow_tir_200m.tif 6.67
+2026-06-28 11:04:48,231 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Running: python d:\hack2Skill\IR-colorization-BAH2026-main\scripts\create_patches.py --input_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data --output_dir d:\hack2Skill\IR-colorization-BAH2026-main\output\patches
+2026-06-28 11:04:52,762 - d:\hack2Skill\IR-colorization-BAH2026-main\output - WARNING - STDERR from create_patches.py:
+2026-06-28 11:04:48,512 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Found 3 products in d:\hack2Skill\IR-colorization-BAH2026-main\output\downscaled_data
+2026-06-28 11:04:48,532 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for delhi...
+2026-06-28 11:04:49,920 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for delhi.
+2026-06-28 11:04:49,938 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for jammu...
+2026-06-28 11:04:51,311 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for jammu.
+2026-06-28 11:04:51,331 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Generating full dataset patches for lucknow...
+2026-06-28 11:04:52,724 - d:\hack2Skill\IR-colorization-BAH2026-main\output\patches - INFO - Successfully created 16 samples for lucknow.
+
+2026-06-28 11:04:52,763 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Successfully generated dataset samples for lucknow
+2026-06-28 11:04:52,763 - d:\hack2Skill\IR-colorization-BAH2026-main\output - INFO - Dataset generation finished. Samples available in output/patches
