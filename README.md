@@ -400,16 +400,16 @@ IR-COLORIZATION-BAH2026-MAIN/
 ├── utils/                              # System helpers and auxiliary scripts
 │   ├── file_utils.py                   
 │   ├── logging_utils.py               
-│   └── visualization.py                
+│   └── visualization.py
+├── LICENSE.txt
+├── README.md                           # Main Hackathon documentation (Version 3)
+├── README_PROBLEM.md                   # Main Hackathon documentation (Version 1)
+├── REPORT NovaPixelX4.pdf              # PDF Report
+├── Run_model.py                        # Top-level entry point for inference execution
 ├── driver.py                           # Master driver for preprocessing orchestration
 ├── eval.py                             # Testing and metric reporting suite(MSE, MAE, PSNR, SSIM)
 ├── output.log                          # Comprehensive runtime logs
-├── README_PROBLEM.md                   # Main Hackathon documentation (Version 1)
-├── README_GUIDE.md                     # Main Hackathon documentation (Version 3)
-├── Run_model.py                        # Top-level entry point for inference execution
-├── tempCodeRunnerFile.py               # Cache environment running file
-└── NovaPixelX4.pdf                     # PDF Report
-
+└── tempCodeRunnerFile.py                # Cache environment running file
 ```
 
 ---
