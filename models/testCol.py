@@ -1,0 +1,411 @@
+import os
+import numpy as np
+import torch
+import matplotlib.pyplot as plt
+import cv2
+from PIL import Image
+
+from generatorcCol import Generator
+
+
+
+
+# =========================================================
+# CONFIG
+# =========================================================
+
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+CHECKPOINT_PATH = "checkpoints/gen_100.pth"
+save_path = "results"
+output_rgb_path="results"
+
+os.makedirs(save_path, exist_ok=True)
+
+
+# =========================================================
+# LOAD MODEL
+# =========================================================
+
+
+TIR_GLOBAL_MIN = 15000
+TIR_GLOBAL_MAX = 35000
+
+RGB_GLOBAL_MIN = 7000
+RGB_GLOBAL_MAX = 25000
+
+
+# =========================================================
+# LOAD MODEL
+# =========================================================
+
+def load_model():
+    model = Generator().to(DEVICE)
+    model.load_state_dict(torch.load(CHECKPOINT_PATH, map_location=DEVICE))
+    model.eval()
+    return model
+
+
+# =========================================================
+# LOAD SAMPLE
+# =========================================================
+
+def load_sample(tir_path, rgb_path=None):
+
+    # ---------------- TIR ----------------
+    tir = np.load(tir_path).astype(np.float32)
+    tir = np.squeeze(tir)
+
+    tir = (tir - TIR_GLOBAL_MIN )/ (TIR_GLOBAL_MAX - TIR_GLOBAL_MIN + 1e-6)
+    tir= np.clip(tir, 0.0, 1.0)
+
+    mean = (np.roll(tir, 1, 0) + tir + np.roll(tir, -1, 0)) / 3
+
+    gx = np.gradient(tir, axis=1)
+    gy = np.gradient(tir, axis=0)
+
+    grad = np.sqrt(gx**2 + gy**2)
+    grad = grad / (grad.max() + 1e-6)
+
+    physics = np.stack([tir, mean, grad], axis=0)
+    physics = torch.tensor(physics, dtype=torch.float32).unsqueeze(0)
+
+    # ---------------- RGB ----------------
+    rgb = None
+    if rgb_path:
+        rgb = np.load(rgb_path).astype(np.float32)
+
+        if rgb.shape[-1] == 3:
+            rgb = np.transpose(rgb, (2, 0, 1))
+
+        rgb = (rgb - rgb.min()) / (rgb.max() - rgb.min() + 1e-6)
+        # rgb = (rgb ) / (rgb.max() + 1e-6)
+
+        rgb = torch.tensor(rgb, dtype=torch.float32).unsqueeze(0)
+
+    return physics, rgb
+
+
+# =========================================================
+# INFERENCE
+# =========================================================
+
+def predict(model, physics):
+    with torch.no_grad():
+        out = model(physics.to(DEVICE))
+    return out.cpu().squeeze(0).numpy()
+
+def percentile_stretch(image, low=2, high=98):
+    """
+    Stretches the intensity of an image based on percentiles to remove outliers.
+    """
+    
+    if image.ndim == 3:
+        stretched = np.zeros_like(image)
+        for i in range(image.shape[-1]):
+            stretched[..., i] = percentile_stretch(image[..., i], low, high)
+        return stretched.astype(np.uint8)
+    
+    low_val = np.percentile(image, low)   
+    # while low_val==0:
+    #     low=low +2
+    #     low_val = np.percentile(image, low) 
+        
+    high_val = np.percentile(image, high)
+    
+    stretched = np.clip(image, low_val, high_val)
+    stretched = (stretched - low_val) * 255.0 / (high_val - low_val + 1e-5)
+    
+    return stretched.astype(np.uint8)
+# =========================================================
+# CLEAN (CHW → HWC)
+# =========================================================
+
+def clean(img):
+
+    if img is None:
+        return None
+
+    img = np.array(img)
+
+    if img.ndim == 4:
+        img = img[0]
+
+    if img.ndim == 3 and img.shape[0] == 3:
+        img = np.transpose(img, (1, 2, 0))
+
+    return img
+
+
+# =========================================================
+# CONVERT TO PNG (IMPORTANT PART)
+# =========================================================
+
+def save_png(fake_rgb, save_path,name):
+    """
+    Save normalized RGB image as PNG.
+
+    Parameters
+    ----------
+    fake_rgb : numpy.ndarray
+        Shape: (3,H,W) or (H,W,3)
+        Range: [0,1]
+    save_path : str
+        Example: "results/fake.png"
+    """
+    save_path=save_path +"/"+ name+".png"
+
+    img = np.array(fake_rgb)
+
+    # CHW -> HWC
+    if img.ndim == 3 and img.shape[0] == 3:
+        img = np.transpose(img, (1, 2, 0))
+
+    # Clip to valid range
+    img = np.clip(img, 0.0, 1.0)
+
+    # Convert to uint8
+    img = (img * 255).round().astype(np.uint8)
+
+    # RGB -> BGR (OpenCV)
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+
+    cv2.imwrite(save_path, img)
+
+    print(f"✅ PNG saved: {save_path}")
+
+
+# =========================================================
+# VISUALIZATION
+# =========================================================
+
+
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+def visualize_numpy(tir, real_rgb=None, fake_rgb=None):
+
+    def prepare(img):
+        if img is None:
+            return None
+
+        # Remove batch dimension
+        if img.ndim == 4:
+            img = img[0]
+
+        # CHW -> HWC
+        if img.ndim == 3 and img.shape[0] in [1, 3]:
+            img = np.transpose(img, (1, 2, 0))
+
+        # Remove grayscale channel
+        if img.ndim == 3 and img.shape[-1] == 1:
+            img = img.squeeze(-1)
+
+        # Normalize if values are in [-1,1]
+        if img.max() > 1.5:
+            # img = (img + 1) / 2
+            # img = (img-RGB_GLOBAL_MIN) / (RGB_GLOBAL_MAX-RGB_GLOBAL_MIN + 1e-6)
+            img = (img-img.min()) / (img.max() - img.min() + 1e-6)
+    
+          
+            # img = img / img.max()
+
+        img = np.clip(img, 0, 1)
+
+        return img
+
+    tir = prepare(tir)
+    real_rgb = prepare(real_rgb)
+    fake_rgb = prepare(fake_rgb)
+
+
+    save_png(fake_rgb, save_path,"fake")
+    save_png(real_rgb, save_path,"real")
+    save_png(tir, save_path,"tir")
+
+    print(fake_rgb.shape,type(fake_rgb))
+    print(tir_img.shape,type(tir_img))
+    real_rgb=clean(real_rgb)
+    print(real_rgb.shape,type(real_rgb))
+
+    # print("Fake RGB :", fake_rgb.shape, type(fake_rgb),
+    #   "Min =", np.min(fake_rgb), "Max =", np.max(fake_rgb))
+
+    # print("TIR Image:", tir_img.shape, type(tir_img),
+    #     "Min =", np.min(tir_img), "Max =", np.max(tir_img))
+
+    # real_rgb = clean(real_rgb)
+
+    # print("Real RGB :", real_rgb.shape, type(real_rgb),
+    #     "Min =", np.min(real_rgb), "Max =", np.max(real_rgb))
+
+    cols = 1 + (real_rgb is not None) + (fake_rgb is not None)
+
+    plt.figure(figsize=(5 * cols, 5))
+
+    i = 1
+    plt.subplot(1, cols, i)
+    plt.imshow(tir, cmap='gray')
+    plt.title("Input TIR")
+    plt.axis("off")
+    i += 1
+
+    if real_rgb is not None:
+        plt.subplot(1, cols, i)
+        plt.imshow(real_rgb)
+        plt.title("Ground Truth RGB")
+        plt.axis("off")
+        i += 1
+
+    if fake_rgb is not None:
+        plt.subplot(1, cols, i)
+        plt.imshow(fake_rgb)
+        plt.title("Generated RGB")
+        plt.axis("off")
+
+    plt.tight_layout()
+    plt.show()
+
+    
+
+# =========================================================
+# MAIN
+# =========================================================
+
+if __name__ == "__main__":
+
+    model = load_model()
+
+    tir_path = r"output/patches/jammu/sample_007/tir_100m_512.npy"
+    rgb_path = r"output/patches/jammu/sample_007/rgb_100m_512.npy"
+
+    # tir_path = r"output/patches/demo/sample_006/tir_100m_512.npy"
+    # rgb_path = r"output/patches/demo/sample_006/rgb_100m_512.npy"
+
+
+
+
+
+
+    physics, real_rgb = load_sample(tir_path, rgb_path)
+
+    fake_rgb = predict(model, physics)
+
+    rgb = np.array(fake_rgb)
+
+    print(rgb.shape)
+    print(rgb.dtype)
+    print("Min:", rgb.min())
+    print("Max:", rgb.max())
+    print("Unique:", np.unique(rgb)[:20])
+
+
+
+   
+    fake_rgb= np.clip(fake_rgb, 0.0, 1.0)
+    fake_rgb= (fake_rgb-fake_rgb.min()) / (fake_rgb.max()-fake_rgb.min() + 1e-6 ) 
+
+
+    rgb = np.array(fake_rgb)
+
+    print(rgb.shape)
+    print(rgb.dtype)
+    print("Min:", rgb.min())
+    print("Max:", rgb.max())
+    print("Unique:", np.unique(rgb)[:20])
+
+
+    
+    rgb = np.array(real_rgb)
+
+    print(rgb.shape)
+    print(rgb.dtype)
+    print("Min:", rgb.min())
+    print("Max:", rgb.max())
+    print("Unique:", np.unique(rgb)[:20])
+
+
+
+    # tir_img = physics.squeeze().numpy()[0]
+
+    tir_img = np.load(tir_path).astype(np.float32)
+    tir_img = np.squeeze(tir_img)
+
+    tir_img = (tir_img - TIR_GLOBAL_MIN )/ (TIR_GLOBAL_MAX - TIR_GLOBAL_MIN + 1e-6)
+    tir_img= np.clip(tir_img, 0.0, 1.0)
+
+
+
+
+    print("TIR Image:", tir_img.shape, type(tir_img),
+        "Min =", np.min(tir_img), "Max =", np.max(tir_img))
+
+   
+
+    tir_img=percentile_stretch(tir_img)
+    
+
+    # real_rgb=percentile_stretch(np.array(real_rgb))
+    # fake_rgb=percentile_stretch(fake_rgb)
+
+    
+    tir_img=tir_img/255.0
+    # real_rgb=real_rgb/255.0
+    # fake_rgb=fake_rgb *0.7 /255.0
+    fake_rgb=fake_rgb *0.5 
+    target_mean= real_rgb.mean()
+
+    print("means =",target_mean,fake_rgb.mean())
+    
+    # fake_rgb=fake_rgb-fake_rgb.mean()+ target_mean
+    print("means =",fake_rgb.mean())
+     
+
+    
+
+
+    
+    visualize_numpy(tir_img, real_rgb, fake_rgb)
+
+    import cv2
+    import matplotlib.pyplot as plt
+
+    # 1. Load the image (replace 'image_f94f83.jpg' with your actual file path)
+    img = cv2.imread('results/fake.png')
+    # OpenCV reads images as BGR, convert it to RGB for proper display in matplotlib
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    # 2. Apply Gaussian Blur 
+    # (3,3) is the kernel size (must be odd numbers). Larger numbers = more blur.
+    gaussian_blur = cv2.GaussianBlur(img_rgb, (3, 3), 0)
+
+    # 3. Apply Median Blur
+    # 5 is the kernel size. Great for removing the grid pattern.
+    median_blur = cv2.medianBlur(img_rgb, 3)
+
+    # 4. Apply Bilateral Filtering
+    # 9 = Pixel neighborhood diameter, 75 = color sigma, 75 = spatial sigma
+    bilateral_filter = cv2.bilateralFilter(img_rgb, 3, 75, 75)
+
+    # 5. Plot and compare results
+    images = [img_rgb, gaussian_blur, median_blur, bilateral_filter]
+    titles = ['Original (Noisy)', 'Gaussian Blur', 'Median Blur', 'Bilateral Filter']
+
+    plt.figure(figsize=(12, 12))
+    for i in range(4):
+        plt.subplot(2, 2, i + 1)
+        plt.imshow(images[i])
+        plt.title(titles[i], fontsize=14)
+        plt.axis('off')
+
+    plt.tight_layout()
+    plt.show()
+
+
+
+    # show_results(tir_img, fake_rgb, real_rgb)
+
+    # save_png(fake_rgb)
+
+    print("✅ Done - PNG + visualization saved")
